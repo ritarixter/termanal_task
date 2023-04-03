@@ -1,0 +1,86 @@
+.dropdownList {
+  width: 100%;
+  max-width: 300px;
+}
+
+.title {
+  margin-left: 16px;
+}
+
+.select {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  height: 48px;
+  border: 1px solid #100c34;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #100c34;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &_open {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  margin-top: 11px;
+  list-style: none;
+  margin-left: -1px;
+  position: relative;
+  z-index: 2;
+  max-height: 180px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  border: 1px solid #100c34;
+  border-top: none;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 42px;
+    background: #a3a3a3;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}
+
+.option {
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 6px 12px 6px 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  transition: color 0.1s linear;
+  height: 36px;
+  box-sizing: border-box;
+
+  &:hover {
+    background: #ff00a8;
+    color: #fff;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 19px;
+  right: 16px;
+
+  &_open {
+    transform: rotate(180deg);
+  }
+}
